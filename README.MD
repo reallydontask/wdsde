@@ -16,6 +16,8 @@ In order to minimize code duplication and ensure that code changes are replicate
 └── variables.tf
 ```
 
+In short, you can modify main in any environment and the changes will be in all other environments as you are effectively writing only to source of the symlink, e.g. main.tf in the root directory of the repo.
+
 Note that this will not work in Windows **unless** you enable symlinks in the OS and git, see [below](#enable-symlinks-in-windows) for details on how to do this.
 
 There are other ways of minimizing code duplication that are perhaps more common, e.g. terragrunt, workspaces, modules, etc.
@@ -31,6 +33,8 @@ In Linux, and I'm writing this from WSL, symbolic links work out of the box and 
 As mentioned in the intro, this can be made to work with Windows by enabling symlinks in Windows and Git but using WSL is the easier choice if using Windows.
 
 # Design Choices
+
+There are some compromises made given the nature of the task, namely an exercise, e.g. mostly everything is a in single file or using local state, these are deemed as acceptable compromises.
 
 ## Structure
 
