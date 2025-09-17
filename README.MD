@@ -20,7 +20,7 @@ Note that this will not work in Windows **unless** you enable symlinks in the OS
 
 There are other ways of minimizing code duplication that are perhaps more common, e.g. terragrunt, workspaces, modules, etc.
 
-In Linux, and I'm writing this from WSL, symbolic links work out of the box and avoid the extra overhead of terragrunt, don't have the footguns of workspaces and are more transparent than using a sort of god module to wrap everything.
+In Linux, and I'm writing this from WSL, symbolic links work out of the box and avoid the extra overhead of terragrunt, are more transparent than workspaces and are easier to maintain than using a sort of environment module to wrap everything.
 
 
 # Pre-Requisites
