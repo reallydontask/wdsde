@@ -10,6 +10,10 @@ In order to minimize code duplication and ensure that code changes are replicate
 │   ├── main.tf -> ../main.tf
 │   ├── terraform.tfvars
 │   └── variables.tf -> ../variables.tf
+├── testing
+│   ├── main.tf -> ../main.tf
+│   ├── terraform.tfvars
+│   └── variables.tf -> ../variables.tf
 ├── main.tf
 └── variables.tf
 ```
