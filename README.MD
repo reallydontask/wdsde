@@ -8,8 +8,6 @@ In order to minimize code duplication and ensure that code changes are replicate
 ├── README.MD
 ├── development
 │   ├── main.tf -> ../main.tf
-│   ├── terraform.tfstate
-│   ├── terraform.tfstate.backup
 │   ├── terraform.tfvars
 │   └── variables.tf -> ../variables.tf
 ├── main.tf
